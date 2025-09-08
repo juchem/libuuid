@@ -38,6 +38,8 @@
  */
 #define _SVID_SOURCE
 
+#include "c.h"
+
 #ifdef _WIN32
 #define _WIN32_WINNT 0x0500
 #include <windows.h>
@@ -91,7 +93,6 @@
 #include "uuidP.h"
 #include "uuidd.h"
 #include "randutils.h"
-#include "c.h"
 
 #ifdef HAVE_TLS
 #define THREAD_LOCAL static __thread
