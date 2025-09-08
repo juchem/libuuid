@@ -143,7 +143,7 @@ static int flock(int fd, int op)
 
 #endif /* LOCK_EX */
 
-#ifdef _WIN32
+#if !defined(__MINGW64__) && defined(_WIN32)
 static void gettimeofday (struct timeval *tv, void *dummy)
 {
 	FILETIME	ftime;
